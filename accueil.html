@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jérôme+Johanna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Almendra+SC&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="jauge.css">
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<!-- Empêche le scroll en butée vers le haut-->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('wheel', function(e) {
+      const isAtTop = window.scrollY === 0;
+      const isScrollingUp = e.deltaY < 0;
+      if (isAtTop && isScrollingUp) {
+        e.preventDefault();
+      }
+    }, { passive: false }); 
+  });
+</script>
+
+
+<body>
+
+<header>
+  <h1>Mariage de <br> Jérôme <span style="font-family:'Eagle Lake'">&</span> Johanna
+  </h1>
+  <p>Rejoignez notre aventure épique le 12 septembre 2026 !</p>
+  <a href="#debut" class="scroll-down" aria-label="Descendre">
+    <img src="img/fleche.png" alt="Flèche vers le bas" style="width: 80px;" class="fleche" />
+  </a>
+</header>
+
+<nav id="navbar">
+    <div class="nav-title">Jérôme+Johanna</div>
+    <ul class="nav-links">
+      <li><a href="#">Accueil</a></li>
+      <li><a href="infos.html">Infos</a></li>
+      <li><a href="RSVP.hmtl">RSVP</a></li>
+    </ul>
+  </nav>
+
+<div class="content-wrapper">
+  <span id="debut">.</span>
+</div>
+<div class="content-wrapper">
+<!-- Section Introduction -->
+<section class="section-bleu">
+
+  <span id="countdown">Chargement du compte à rebours...</span> 
+
+  <p>Bienvenue gents Messires et preuses Dames ! Vous êtes joyeusement conviés à participer à ce nouveau chapitre de notre histoire. Vous trouverez sur ce site toutes les informations dont vous avez besoin pour préparer votre périple.  </p>
+
+  <!-- Images de navigation-->
+  <div class="debut-grid">
+    <a href="infos.html" class="debut-card" aria-label="Infos pratiques">
+      <img src="img/map.jpg" alt="Image de la carte de la Terre du milieu" />
+      <span>Infos pratiques</span>
+    </a>
+    <a href="#rsvp" class="debut-card" aria-label="Confirmez votre présence">
+      <img src="img/pigeon.png" alt="Image de pigeon voyageur" />
+      <span>Confirmer sa présence</span>
+    </a>
+    <a href="https://chat.whatsapp.com/DUxVmwg7DUmHz1Hfxczn4b?mode=ac_t" target="_blank" class="debut-card" aria-label="Image d'un couple devant un château de fantasy">
+      <img src="img/whatsapp.png" alt="Rejoindre la Communauté" />
+      <span>Rejoindre la Communauté</span>
+    </a>
+  </div>
+</section>
+</div>
+
+<div class="content-wrapper">
+<!-- Section Défis -->
+<section id="defis" class="section-vert-sauge">
+  <h6>🌿 Participez aux défis et débloquez des surprises pour la fête ! 🌿 </h6>
+  <p>Jusqu'au jour du mariage, relevez nos défis écologiques et faites grimper le compteur collectif de points ! Chaque palier atteint débloque une animation spéciale pour la fête du mariage. </p>
+  <p>✨ Spectacles, danse médiévale, animations surprises… à vous de les invoquer par vos actions ! </p>
+
+  <h2>Paliers atteints</h2>
+  <ul>
+    <li><span class="points">☙&nbsp 1000 points &nbsp❧</span> Jeu de quête surprise le jour du mariage 🏹</li>
+    <li><span class="points">☙&nbsp 2000 points &nbsp❧</span> Spectacle de fauconnerie 🦅</li>
+    <li><span class="points">☙&nbsp 3000 points &nbsp❧</span> Boîte à livres géante ! 📚</li>
+  </ul>
+
+
+
+  <!-- Palier en cours & Jauge de progression -->  
+  <div id="progress-container" class="prochain-palier">
+  <h3>Prochain palier :</h3>
+  <p>Révélation du lieu de notre voyage de noces 🏝️</p>
+  <div class="points-counter" id="points-counter">0 / 3000 points</div>
+  <div class="progress-container">
+    <div class="progress-bar" id="progress-bar">0%</div>
+  </div>
+</div>
+
+  <h2>Les Défis !</h2>
+  <p>Lancez vous dans un défi ! Ou même plusieurs à la fois. Si un défi est réussi plusieurs fois, vos points s'accumulent. Le nombre de points reflète l'impact positif de l'action. </p>
+  
+  <h3>🌍 C'est parti ! </h3>
+  <ul>
+    <li><span class="points">100 points</span> : Calculer son impact carbone sur le site <a href="https://agirpourlatransition.ademe.fr/particuliers/conso/conso-responsable/connaissez-vous-votre-empreinte-climat" target="_blank">Nos gestes climat</a> </li>
+  </ul>
+  
+  <h3>🚂 Transport </h3>
+  <ul>
+    <li><span class="points">130 points</span> : Venir au mariage en train (On s'occupe des navettes entre Cadenet et la gare TGV d'Aix ! <a href="infos.html">Infos navette ici</a>)</li>
+    <li><span class="points">50 points</span> : Venir au mariage en covoiturage (4 personnes / voiture <a href="infos.html">Infos covoiturage ici</a>)</li>
+    <li><span class="points">25 points</span> : Remplacer 50km de voiture par du vélo ou de la marche </li>
+    <li><span class="points">800 points</span> : Remplacer le trajet en avion de ses prochaines vacances par un trajet en train</li>
+    <li><span class="points">240 points</span> : Remplacer un trajet en avion par du train</li>
+  </ul>
+  
+
+  <h3>🥗 Alimentation</h3>
+  <ul>
+    <li><span class="points">6 points/semaine</span> : Réduire sa consommation à deux repas avec viande par semaine</li>
+    
+    <li><span class="points">10 points/semaine</span> : Manger pescétarien pendant une semaine (pas de viande)</li>
+    <li><span class="points">20 points/semaine</span> : Manger végétarien pendant une semaine (ni viande ni poisson)</li>
+    <li><span class="points">7 points/semaine points</span> : Manger des produits locaux </li>
+  </ul>
+  
+
+  <h3>🗑️ Déchets</h3>
+  <ul>
+    <li><span class="points">50 points </span> : Ramasser des déchets dans un espace naturel</li>
+    <li><span class="points">10 points/mois</span> : Trier ses déchets</li>
+    <li><span class="points">50 points</span> : Petit pas vers une démarche zéro-déchet (acheter du shampoing solide, remplacer son éponge jetable par un chiffon lavable...)</li>
+    <li><span class="points">30 points</span> : Réduire consommation de plastique pendant une semaine</li>
+  </ul>
+  
+
+  <h3>💸 Consommation</h3>
+  <ul>
+    <li><span class="points">40 points </span> : Louer ou acheter d'occasion sa tenue pour le mariage</li>
+    <li><span class="points">250 points </span> : Remplacer un achat prévu d'électronoménager ou hi-tech neuf par de l'occasion ou reconditionné</li>
+  </ul>
+  
+  <h3>💪 Collectif : Ensemble on va plus loin ! </h3>
+  <ul>
+    <li><span class="points">100 points</span> : Organiser avec des voisins/amis/famille une liste d'échange d'outils et matériel de cuisine </li>
+    <li><span class="points">100 points</span> : Participer à un atelier de sensibilisation sur l'écologie : <a href="https://fresqueduclimat.org" target="_blank">Fresque du climat</a>, <a href="https://www.2tonnes.org/" target="_blank">2tonnes</a>... </li>
+    <li><span class="points">Points doublés</span> : Motiver une autre personne à suivre un de ces défis avec vous : vos points comptent double ! *sous réserve qu'elle ne déclare pas ses points elle aussi</li>
+  </ul>
+
+  <h3>🃏 Autres actions </h3>
+  <ul>
+    <li>Si ce défi collectif vous a motivé pour vous lancer dans une action écologique, cochez "Autre" et racontez nous ! On vous ajoutera un nombre de points en fonction ! </li>
+  </ul>
+
+  <div class="conteneur-bouton">
+    <button class="button-commu" href="https://chat.whatsapp.com/DUxVmwg7DUmHz1Hfxczn4b?mode=ac_t" target="_blank"> Des questions sur les défis ? Un groupe dédié est prévu dans la Communauté ! </button>
+  </div>
+    
+    <br>
+    
+    <form id="defi-form">
+      <label for="name">Nom* :</label>
+      <input type="text" id="name" name="Nom" required />
+
+      <label for="defi">Défi relevé ?</label>
+      <select id="defi" name="Défi" required>
+        <option value="">-- Sélectionnez un défi* --</option>
+        <option value="defi1">🌍 100 points : Calculer son impact carbone sur Nos gestes climat </option>
+        <option value="defi2">🚂 130 points : Venir au mariage en train </option>
+        <option value="defi3">🚂 50 points : Venir au mariage en covoiturage (4 personnes / voiture</option>
+        <option value="defi3">🚂 25 points : Remplacer 50km de voiture par du vélo ou de la marche </option>
+        <option value="defi3">🚂 800 points : Remplacer le trajet en avion de ses prochaines vacances par un trajet en train</option>
+        <option value="defi3">🚂 240 points : Remplacer un trajet en avion par du train</option>
+        <option value="defi3">...</option>
+        <option value="defi-autre">Autre</option>
+      </select>
+
+
+      <label for="message">Si vous le voulez, racontez-nous !</label>
+      <textarea id="message" name="Message" rows="4"></textarea>
+
+      <!-- Anti-spam honeypot -->
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_captcha" value="false">
+
+      <div class="submit-container">
+        <button class="button-form" type="submit">Envoyer</button>
+      </div>
+    </form>
+    <br>
+  </div>
+  
+</section>
+</div>
+
+<div class="content-wrapper">
+<section id="eco" class="section-bleu">
+  <h1>🌿 CO₂ économisé collectivement 🌿</h1>
+  <div class="counter" id="co2-counter">0.000</div>
+  <div id="tonnes">tonnes de CO₂</div>
+  <p>Merci beaucoup pour votre investissement ! Nous portons tous les deux une grande importance à la préservation de la nature, cela nous touche que vous nous aidiez à faire que cette journée magique, si importante pour nous, soit en harmonie avec elle. </p>
+</section>
+</div>
+
+
+<footer>
+  Johanna & Jérôme ❤️
+  <!--
+    Infos pratiques 
+    RSVP 
+    La Communauté 
+    Les Défis
+  -->
+</footer>
+
+</body>
+
+<script src="rebours.js"></script>
+<script src="navbar.js"></script>
+<script src="jauge.js"></script>
+<script src="CO2compteur.js"></script>
+
+</html>

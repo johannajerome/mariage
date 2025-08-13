@@ -1,0 +1,107 @@
+/* Jauge de progression */
+  .progress-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #e0f0e0;
+    border: 2px solid var(--ivoire) !important; 
+    border-radius: 12px;
+    overflow: hidden;
+    height: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+  }
+
+  .progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--vert-lierre), var(--vert-sauge));
+    text-align: right;
+    padding-right: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Eagle Lake', cursive;
+    box-shadow: 0 0 10px #ffeb00, 0 0 20px #ff6a00; 
+  }
+
+  .goal-label {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+    color: #2f4f2f;
+    font-family: 'Eagle Lake', cursive;
+  }
+
+  .points-counter {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    font-family: 'Eagle Lake', cursive;
+  }
+  
+  
+  
+  /* Palier atteint */
+  
+  /* Couleur or pour la jauge remplie */
+.gold-bar {
+  background: linear-gradient(to right, #d4af37, #f7e16b);
+  color: transparent !important; /* texte caché */
+  transition: background 0.5s ease;
+}
+
+/* Conteneur or + pulse */
+.gold-container {
+  background-color: #d4af37 !important;
+  border-color: #b38f24 !important;
+  box-shadow: 0 0 15px 4px #d4af37;
+  transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+
+/* Animation pulse glow */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px 4px #d4af37;
+  }
+  50% {
+    box-shadow: 0 0 25px 8px #f7e16b;
+  }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2.5s ease-in-out infinite;
+}
+
+.gold-container h3,
+.gold-container p,
+.gold-container .points-counter,
+.gold-container .progress-bar {
+  color: white !important;
+  text-shadow: 1px 1px 3px var(--bordeaux);
+}
+
+
+
+
+
+
+
+.progress-bar::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 20px;
+  background: rgba(255,255,255,0.5);
+  position: absolute;
+  top: 0;
+  left: -20px;
+  transform: skewX(-20deg);
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% { left: -20px; }
+  100% { left: 100%; }
+}
+
