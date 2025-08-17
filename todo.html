@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta charset="UTF-8" />
+ </head>
+ <body>
+  <h1>A faire :</h1>
+  <ul>
+   <li>[Johanna] Ajouter le CO2 dans la description des défis de la page accueil.html : <b>&lt;li data-co2="1.7"&gt;</b></li>
+   <li>[Frédéric] Parser accueil.html pour réinitialiser la base avec le CO2</li>
+   <li>[Johanna puis Frédéric] Soigner le feedback lorsque l'on soummet un défi (remercier, rappeller qu'il doit être validé par l'administrateur du site avant d'être compté). 1/ [Johanna] Mettre en forme un texte dans la page, 2/ [Frédéric] rendre l'affichage conditionnel, et éventuellement paramétré.</li>
+   <li>[Johanna puis Frédéric] RSVP</li>
+  </ul>
+  <h1>Idées secondaires :</h1>
+  <ul>
+    <li>[Frédéric] Prévoir la modification de la liste des défis après le lancement du site, ou les id ne doivent pas changer. 2 approches : 1/ numérotation de 10 en 10 pour faciliter les insertion (et usage de Adm pour modifier les défis), ou 2/ ajouter une information ordre distincte de l'id. Dans ce cas, il faut ajouter un attribut <b>data-id</b> comme on l'a fait pour le CO2 et s'interdire de changer l'id une fois le site lancé. Cette option permet d'utiliser le parser et garantir la cohérence</li>
+  </ul> 
+  <h1>Points à voir (à valider ou décider) :</h1>
+  <ul>
+    <li>Icône du site... j'ai pris la première icône d'alliance venue, convertie JPEG->ICO ;-)</li>
+    <li>Algorythme d'accélération... la gaussienne est appliquée à l'ensemble de l'animation et non à chaque pallier</li>
+    <li>La durée de l'animation est de 4s... fixe... pas de calcul compliqué (selon le nombre de points, etc). Une alternative est une fonction lentement croissante avec le nombre de points... comme une racine carré ou un logarythme... à voir</li>
+    <li>Le 0 de la jauge est à 0 points... on pourrait mettre le 0 au pallier précédent et l'animation revient à 0% à chaque pallier</li>
+    <li>Les histoires de couleur de la jauge... passage à or... Pour le dernier pallier atteint ?</li>
+    <li>Le script ne sait plus quoi faire si on dépasse le dernier pallier... passage à "or" et à 100%  ?</li>
+    <li>Utilité du script de compteur à CO2 pas compris... Je l'ai désactivé et chargé PHP de présenter le nombre à 3 décimales.</li>
+    <li>Présentation du menu des défis à affiner... (points entre parenthèses, autres)</li>
+    <li>Les palliers sont désormais lus depuis la base de données... Les palliers en dur dans HTML sont ignorés (commentés)... Je t'invite à jouer au jeu des 7 différences... et si cela ne te plait pas, voir <a href="https://jeromejohanna2026.fr/Adm/palliers.php">page de gestion des palliers</a></li>
+    <li>Notification par email... on peux marquer les soumissions comme nouvelles, et chaque jour envoyer un digest s'il y a du nouveau</li>
+    <li>Et si aucun pallier n'est atteint... quel affichage... Une maquette est <a href="a.php">ici</a> et montre un affichage lorsqu'aucun pallier n'est atteint.</li>
+    <li>Sur RSVP, si (avec les cookie), je vois que la personne s'est déjà enregistrée, je peux proposer la modification de son invitation... Mais cela ne passe pas d'un ordinateur à l'autre</li>
+    <li>Easter eggs ? (Avec le serveur, je peux faire en sorte que l'index des répertoires appelé sans nom de fichier pointe sur accueil.php (oups, c'est déjà fait) et non sur index.html, ou index.php comme usuellement.... mais on peut faire en sorte que l'appel d'une de ce ces pages ne déçoit pas ;-) )...</li>
+  </ul>
+  <h1>Points en suspend avant mise en production</h1>
+  <ul>
+    <li>Remplacer les liens vers HTML par PHP si pages dynamiques.</li>
+ </body>
+</html>
