@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jérôme+Johanna</title>
+  <link rel="icon" href="img/coeur.png">
+  <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Almendra+SC&family=UnifrakturMaguntia&family=Beth+Ellen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="images.css">
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<!-- Empêche le scroll en butée vers le haut-->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('wheel', function(e) {
+      const isAtTop = window.scrollY === 0;
+      const isScrollingUp = e.deltaY < 0;
+      if (isAtTop && isScrollingUp) {
+        e.preventDefault();
+      }
+    }, { passive: false }); 
+  });
+</script>
+
+
+<body>
+
+<header class="header-bandeau">
+  <h1>Informations pratiques</h1>
+</header>
+
+<nav>
+  <div class="nav-title"><a href="accueil.html">
+        <span class="full-title">Jérôme+Johanna</span>
+        <span class="short-title">J+J</span>
+      </a></div>
+  <ul class="nav-links">
+    <li><a href="accueil.html">Accueil</a></li>
+    <li><a href="infos.html"><span class="full-title">Infos pratiques</span><span class="short-title">Infos</span></a></li>
+    <li><a href="RSVP.hmtl">RSVP</a></li>
+    <li><a href="accueil.html#defis"><span class="full-title">Les défis !</span><span class="short-title">Défis</span></a></li>
+  </ul>
+</nav>
+
+<div class="content-wrapper">
+<section class="section-bordeaux">
+  <p>Oyez oyez aventuriers ! Vous trouverez ici toutes les informations dont vous avez besoin pour organiser votre périple. </p>
+  
+  <ul>
+    <li><a href="#tenue">Tenue</a></li>
+    <li><a href="#programme">Programme</a></li>
+    <li><a href="#transport">Transport</a></li>
+    <li><a href="#hebergement">Hébergement</a></li>
+  </ul>
+  
+</section>
+</div>
+
+<div class="content-wrapper">
+  <section id="tenue" class="section-bleu">
+  
+  <div class="trois-colonnes">
+    
+    <div>
+      <h2 class="h2-infos">Tenue</h2>
+        <h3>Festif et coloré !</h3>
+          <p>Si vous souhaitez être assortis à notre palette de couleurs, la voici : </p>
+          <ul class="list-colors">
+            <li>Vert lierre</li>
+            <li>Vert sauge</li>
+            <li>Ivoire</li>
+            <li>Bleu roi</li>
+            <li>Bordeaux</li>
+            <li>Or antique</li>
+          </ul>
+        
+        <h3>Touche médiévale-fantastique bienvenue ! ✨ (mais aucune obligation)</h3>
+          <p>Par exemple, une broche discrète, un motif de cravate ou de ruban, une boutonnière ou un bijou, qui évoque l'ère médiévale ou un univers de fantasy (Seigneur des Anneaux, Eragon, Le Sorceleur, Donjons et Dragons, Baldur's Gate, ...). Vous pouvez aussi choisir un habit complet dans le style de l'époque si vous le souhaitez et êtes à l'aise avec !</p>
+    </div>
+
+
+
+    <div class="colonne-image">
+      <div class="image-container">
+        <img src="img/vertlierre.jpg" alt="Vert lierre"/>
+        <div class="overlay">Vert lierre</div>
+      </div>
+      <div class="image-container">
+        <img src="img/bleuroi.jpg" alt="Bleu roi"/>
+        <div class="overlay">Bleu roi</div>
+      </div>
+      <div class="image-container">
+        <img src="img/ivoire.jpg" alt="Ivoire"/>
+        <div class="overlay">Ivoire</div>
+      </div>
+    </div>
+        
+    <div class="colonne-image">
+      <div class="image-container">
+        <img src="img/vertsauge.jpg" alt="Vert sauge"/>
+        <div class="overlay">Vert sauge</div>
+      </div>
+      <div class="image-container">
+        <img src="img/bordeaux.jpg" alt="Bordeaux"/>
+        <div class="overlay">Bordeaux</div>
+      </div>
+      <div class="image-container">
+        <img src="img/orantique.jpg" alt="Or antique"/>
+        <div class="overlay">Or antique</div>
+      </div>
+    </div>
+  
+  </div>
+  </section>
+</div>
+
+
+<div class="content-wrapper">
+  <section id="programme" class="section-vert-sauge">
+    <h2 class="h2-infos">Programme du mariage</h2>
+    <ul>
+      <li>15h Cérémonie à l'Eglise Saint Etienne par le Père Jean-Luc ⛪</li>
+      <li>17h  Vin d'honneur au domaine de Collongue 🥂</li>
+      <li>19h30 Banquet festin 🥳</li>
+      <li>21h Bal sous les étoiles 🎶</li>
+    </ul>
+    
+    <div class="deux-colonnes">
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.135660328191!2d5.373218315500441!3d43.736717179121374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c97967f9e0c0a1%3A0x0!2zNDPCsDQ0JzEyLjIiTiA1wrAwMjInMzEuNiJF!5e0!3m2!1sfr!2sfr!4v1692036000000!5m2!1sfr!2sfr"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <p style="text-align:center">Cérémonie : Eglise Saint Etienne, Cadenet 84160, Provence</p>
+  </div>
+
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.178019938665!2d5.389719315501455!3d43.75306207912185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c979d55b3de9af%3A0x0!2zNDPCsDQ1JzExLjAiTiA1wrAyMyczMC40IkU!5e0!3m2!1sfr!2sfr!4v1692038500000!5m2!1sfr!2sfr"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      allowfullscreen=""
+    ></iframe>
+    <p style="text-align:center">Réception : Domaine de Collongue, Cadenet 84160, Provence</p>
+  </div>
+</div>
+
+
+  </section>
+</div>
+
+<div class="content-wrapper">
+  <section id="transport" class="section-bleu">
+    <h2 class="h2-infos">Transport</h2>
+    <span style="color: var(--vert-sauge)">Des navettes sont prévues entre la gare d'Aix TGV et Cadenet, puis entre les lieux de la cérémonie, la réception et vos hébergements. </span>
+    
+    <h3 class="h3-transport">Covoiturage</h3>
+    S'il reste des places de libre dans votre voiture, ou bien que vous cherchez un conducteur, voici un groupe pour vous aider à trouver vos partenaires de covoiturage parmi les invités ! 
+    <button class="button-groups"><a href="https://chat.whatsapp.com/HNCtPJsgf5o5LB6ilo74pJ?mode=ac_t" target="_blank">Groupe de covoiturage </a></button>
+    
+    <h3 class="h3-transport">Train + véhicule de location</h3>
+  Vous trouverez de nombreux véhicules en autopartage ou location à la gare d'Aix TGV, par exemple sur <a href="https://fr.getaround.com/">getaround</a>. 
+  
+    <h3 class="h3-transport">Train + navette</h3>
+    Nous avons prévu des navettes pour les arrivées des trains suivants :
+    <ul class="list-leave">
+      <li>Paris-Aix arrivée XXhXX (complet)</li>
+      <li>Paris-Aix arrivée XXhXX et Nancy-Aix arrivée XXhXX</li>
+    </ul>
+  IMPORTANT : Dites nous dans votre confirmation de venue si vous comptez prendre une de ces navettes pour nous permettre d'adapter le nombre en fonction de vos besoins !
+
+<button class="button-groups"><a href="https://chat.whatsapp.com/GZAkLyo6WjN6P3r3g5P7JE?mode=ac_t" target="_blank">Groupe des navettes</a></button>
+
+  
+  <h3 class="h3-transport">Train + vélo</h3>
+  Pour les plus téméraires d'entre vous, la gare d'Aix TGV se trouve à 2h20 en vélo de Cadenet. Voici un groupe dédié pour organiser ensemble votre périple en toute sécurité : 
+  <button class="button-groups"><a href="https://chat.whatsapp.com/Inj0AxPQclcAZLQJVx7URK?mode=ac_t" target="_blank">Groupe des téméraires à bicyclette </a></button>
+    
+Vous pouvez aussi rejoindre le groupe de covoiturage pour le transport de vos bagages. 
+
+  
+  
+  
+  </section>
+</div>
+
+<div class="content-wrapper">
+  <section id="hebergement" class="section-vert-sauge">
+    <h2 class="h2-infos">Hébergement</h2>
+    
+    <ul class="list-leave">
+      <li>Mobil-homes à louer au camping Val de Durance, Les Hautes Prairies</li>
+      <li>Hôtel Le Moulin à Lourmarin</li>
+      <li>Nombreux gîtes et hôtels proches aux alentours</li>
+    </ul>
+    Nous prevoyons des navettes entre le lieu de la réception et vos hébergements, le soir du mariage et le lendemain matin. 
+
+  </section>
+</div>
+<footer>
+  Johanna & Jérôme 💙
+</footer>
+
+</body>
+
+<script src="rebours.js"></script>
+<script src="navbar.js"></script>
+<script src="jauge.js"></script>
+<script src="CO2compteur.js"></script>
+
+</html>

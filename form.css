@@ -1,0 +1,144 @@
+form {
+      max-width: 500px;
+      margin: auto;
+      background-image: url(img/parchemin.jpg);
+      background-size: 100% 100%;
+      padding: 2em;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+h1 {
+  text-align: center;
+}
+
+label {
+      display: block;
+      margin: 1em 0 0.3em;
+      font-weight: bold;
+    }
+
+input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 0.6em;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+      font-family: 'Eagle Lake', cursive;
+    }
+
+    .submit-container {
+      text-align: right;
+    }
+
+    .button-form {
+      margin-top: 1em;
+      padding: 0.7em 1.5em;
+      font-size: 1em;
+      background-color: var(--bordeaux);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: 'Eagle Lake', cursive;
+    }
+
+    .button-form:hover {
+      background-color: var(--bordeaux-clair);
+    }
+    
+    .conteneur-bouton {
+  text-align: center;
+}
+  .button-commu {
+    margin-bottom: 20px;
+    margin-bottom: 2em;
+    background-color: transparent;
+    color: var(--bleu-roi);
+    border: 2px solid var(--bleu-roi);
+    border-radius: 6px;
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'Eagle Lake', cursive;
+    display: block;
+    margin: 0 auto;
+    transition: transparent 0.3s ease, transform 0.2s ease;
+  }
+  
+  
+   .button-to-defi {
+    margin-bottom: 20px;
+    margin-bottom: 2em;
+    background-color: transparent;
+    color: var(--bordeaux);
+    border: 2px solid var(--bordeaux);
+    border-radius: 6px;
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'Eagle Lake', cursive;
+    display: block;
+    margin: 0 auto;
+    transition: transparent 0.3s ease, transform 0.2s ease;
+  }
+
+  
+  select {
+      max-height: 150px; /* limite la hauteur affichée */
+      overflow-y: auto;   /* scroll si trop d'options */
+    }
+    
+    
+.button-form {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-form:hover {
+  background-color: #a02020;
+}
+
+
+.button-commu a {
+  text-decoration: none;
+}
+
+.button-commu:hover {
+  border: 2px solid var(--bleu-roi-clair);
+  color: var(--bleu-roi-clair);
+  transform: scale(1.05);
+}
+
+
+.button-to-defi:hover {
+  border: 2px solid var(--bordeaux-clair);
+  color: var(--bordeaux-clair);
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 1px var(--or-antique));
+}
+
+
+.button-groups {
+    background-color: transparent;
+    color: var(--vert-sauge);
+    border: 2px solid var(--vert-sauge);
+    border-radius: 6px;
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'Eagle Lake', cursive;
+    display: block;
+    margin: 20px auto;
+    transition: transparent 0.3s ease, transform 0.2s ease;
+  }
+  .button-groups a {
+  text-decoration: none;
+}
+
+.button-groups:hover {
+  border: 2px solid var(--vert-sauge-clair);
+  color: var(--vert-sauge-clair);
+  transform: scale(1.05);
+}
